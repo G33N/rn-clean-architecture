@@ -62,7 +62,7 @@ The domain encapsulate:
 
 **Failures** is a abstraction layer to handle the exceptions from the repository/infrastructure layer.
 
-#### Infrastructure
+#### Infrastructure
 
 Here live the repositories, local and remote resources as services. (Store, API connections, LocalStorage, device resources like location, etc)
 
