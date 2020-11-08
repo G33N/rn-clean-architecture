@@ -1,6 +1,6 @@
-### React Native Clean architecture
+# React Native Clean architecture
 
-### Project Structure
+## Project Structure
 
 ```
 /
@@ -25,7 +25,7 @@
      └── shared                         
 ```
 
-### Project Architecture - Applying Clean Architecture in React Native
+## Project Architecture - Applying Clean Architecture in React Native
 
 The rule of dependency can help you to intelligently divide and conquer, using concepts from [**Clean Architecture**](https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html) We can build apps more stables and more scalable.
 
@@ -40,15 +40,15 @@ In this case this can be a great idea to abstract the business logic and uses ca
 
 ![architecture](./doc/architecture.png)
 
-#### Presentation
+### Presentation
 
 In this layer are all the react native code, in less words the view. (components, styles, routing, theme...)
 
-#### Application
+### Application
 
 In this layer we place the **Use cases**, this interact with the **Domain** layer and know about the **Entities** that each **Use case** need to do a specific task. This layer encapsulate the application logic and orchestrate the flow of data.
 
-#### Domain
+### Domain
 
 The domain encapsulate:
 
@@ -62,7 +62,7 @@ The domain encapsulate:
 
 **Failures** is a abstraction layer to handle the exceptions from the repository/infrastructure layer.
 
-#### Infrastructure
+### Infrastructure
 
 Here live the repositories, local and remote resources as services. (Store, API connections, LocalStorage, device resources like location, etc)
 
