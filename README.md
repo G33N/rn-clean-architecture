@@ -11,9 +11,12 @@
 └── src
      ├── bounded-context                
      │      ├── presentation            React Native UI logic, containers, screens, components.
+     │      │       ├── i18n
+     │      │       ├── navigations      
      │      │       ├── components      
      │      │       └── stylesheets     
      │      ├── application             Application business logic (Use cases).
+     │      │       └── hooks 
      │      ├── domain                  Enterprise business logic.
      │      │       ├── entity          
      │      │       ├── failures        
@@ -21,6 +24,7 @@
      │      └── infrastructure          Interface to communicate with other contexts. (Local and remote resources)
      │          ├── sagas
      │          ├── services
+     │          ├── integrations
      │          └── redux
      └── shared                         
 ```
